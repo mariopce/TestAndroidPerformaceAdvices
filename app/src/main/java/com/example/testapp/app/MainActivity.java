@@ -15,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
     private TextView text1;
     private TextView text2;
     private TextView text3;
+    private TextView text4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class MainActivity extends ActionBarActivity {
         text1 = (TextView)findViewById(R.id.alg1);
         text2 = (TextView)findViewById(R.id.alg2);
         text3 = (TextView)findViewById(R.id.alg3);
+        text4 = (TextView)findViewById(R.id.alg4);
+
     }
 
     @Override
@@ -33,7 +36,7 @@ public class MainActivity extends ActionBarActivity {
         for (int i = 0; i < 1000; i++) {
             generated.add(User.generate());
         }
-        wormup(generated);
+        warmup(generated);
         long l1 = 0;
         long l2 = 0;
         long l3 = 0;
@@ -43,10 +46,11 @@ public class MainActivity extends ActionBarActivity {
 
         text1.setText("alg1 " + (l1/1000));
         text2.setText("alg2 " + (l2/1000));
-        text3.setText("alg3 " + (l3/1000));
+        text3.setText("alg3 " + (l3 / 1000));
+
     }
 
-    private void wormup(List<User> generated) {
+    private void warmup(List<User> generated) {
         for (int i = 0; i <  1000; i++) {
             resAlgor(new LoopAlgorithm3(generated));
             resAlgor(new LoopAlgorithm2(generated));
