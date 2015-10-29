@@ -10,7 +10,7 @@ Maybe my benchmarks are not so super profecional,but give me more or less  infor
 
 @JakeWharton said that this algotithm should be faster
 
-```markdown LoopAlgorithm2
+```LoopAlgorithm2
 List<String> names = new ArrayList<String>(users.size());
         for (String name : names) {
             names.add(name);
@@ -19,7 +19,7 @@ List<String> names = new ArrayList<String>(users.size());
 ```        
 then this
 
-```markdown LoopAlgorithm1
+```LoopAlgorithm1
 List<String> names = new ArrayList<String>();
         for (String name : names) {
             names.add(name);
