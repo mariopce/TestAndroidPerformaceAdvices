@@ -3,10 +3,10 @@ Testing advice for android performance
 
 Based on https://www.youtube.com/watch?v=b6zKBZcg5fk 
 
-I don't like when someone say about optimization and don't benchmarks/ mesure what say. 
+I don't like when someone say about optimization and don't mesure what say. 
 Because of that I say check.
 
-Maybe my benchmarks are not so super profecional,but give me more or less  information which algorithm is faster. 
+Maybe my benchmarks are not so super profecional,but give me more or less information about which algorithm is faster. 
 
 @JakeWharton said that this algotithm should be faster
 
@@ -27,7 +27,7 @@ List<String> names = new ArrayList<String>();
         return names;
 ```
 
-I check this on JVM and android and it looks like Jack don't have right. 
+I check this on JVM and android and it looks like Jake are not right. 
 On android the algotithm `LoopAlgorithm2` is 10 times slower then `LoopAlgorithm1`, regardless of the order !! 
 
 Please confirm that on your devices is the same and I didn't made a stupid mistake. 
