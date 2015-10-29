@@ -28,6 +28,6 @@ List<String> names = new ArrayList<String>();
 ```
 
 I check this on JVM and android and it looks like Jack don't have right. 
-On android the algotithm LoopAlgorithm2 is 10 times slower then LoopAlgorithm1, regardless of the order !! 
+On android the algotithm `LoopAlgorithm2` is 10 times slower then `LoopAlgorithm1`, regardless of the order !! 
 
 Please confirm that on your devices is the same and I didn't made a stupid mistake. 
